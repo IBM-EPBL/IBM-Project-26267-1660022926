@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fashion shop</title>
+    <link rel="stylesheet" href="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.css">
+<!--    <style>-->
+<!--        body{-->
+<!--            background-color: aqua;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            flex-direction: column;-->
+<!--        }-->
+<!--        img{-->
+<!--            height: 240px;-->
+<!--            border-radius: 10px;-->
+<!--            margin: 10px;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+    <h1>Welcom to Image Gallery</h1>
+    <div>
+        <img src="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/one.jpg" alt="dress" srcset="">
+        <img src="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/two.jpg" alt="dress" srcset="">
+        <img src="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/three.jpg" alt="dress" srcset="">
+        <img src="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/four.jpg" alt="dress" srcset="">
+        <img src="https://flask-plasma1.s3.jp-tok.cloud-object-storage.appdomain.cloud/five.jpg" alt="dress" srcset="">
+    </div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "18d74719-6f76-47bb-842e-bcdcbbf058f2", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "ba03f755-63fe-43cc-8406-42359f9419d6", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
