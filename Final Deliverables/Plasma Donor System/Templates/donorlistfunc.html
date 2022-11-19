@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/donorlistfunc.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Blood bank register</title>
+</head>
+<body>
+<h1 class="hea">Donor List</h1>
+     <table border = 1 class="center">
+         <thead>
+            <td class="a">Name</td>
+            <td class="a">Email</td>
+            <td class="a">city</td>
+            <td class="a">State</td>
+            <td class="a">Pincode</td>
+            <td class="a">Contact</td>
+            <td class="a">Blood</td>
+            <td class="a">Ask Blood</td>
+         </thead>
+         {% for row in donors %}
+            <tr>
+               <td>{{row["USERNAME"]}}</td>
+               <td> {{ row["EMAIL"]}}</td>
+               <td>{{row["CITY"]}}</td>
+               <td>{{row['STATE']}}</td>
+                <td>{{row['PINCODE']}}</td>
+                <td>{{row['CONTACT']}}</td>
+                <td>{{row['BLOOD']}}</td>
+                <td>
+                    <form action="{{url_for('requesthandler')}}" method="POST"><button class="btn" name="username" value={{row["USERNAME"]}}>request</button></form></td>
+            </tr>
+         {% endfor %}
+      </table>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
