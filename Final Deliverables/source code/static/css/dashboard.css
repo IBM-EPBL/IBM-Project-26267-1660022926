@@ -1,0 +1,38 @@
+.er{
+    margin-top: 5rem;
+}
+.re{
+    max-width: max-content;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: #2b073b;
+    opacity: 0.9;
+}
+.im{
+    text-align: right;
+    max-width: 50%;
+    max-height: 10cm;
+}
+body{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(300deg, gray 20%,#2b073b);
+}
+.btn{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: violet;
+    color: black;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: blanchedalmond;
+    color: black;
+    text-decoration: none;
+}
