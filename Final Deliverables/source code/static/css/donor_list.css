@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(300deg, gray 20%,#2b073b);
+}
+.po{
+color:bisque;
+font-weight:bold;
+text-decoration:none;
+margin-top:2rem;
+}
+table, th, td {
+  border: 1px solid bisque;
+  border-collapse: collapse;
+  text-align:left;
+}
+.hea{
+text-align:center;
+color:bisque;
+margin-top:1rem;
+}
+.center {
+margin-top:1rem;
+  color:blanchedalmond;
+  margin-left:auto;
+  margin-right:auto;
+}
+.a{
+text-align:center;
+}

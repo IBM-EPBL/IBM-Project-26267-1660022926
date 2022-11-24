@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/signup.css">
+    <title>PDS-Register</title>
+</head>
+<body>
+    <div class="img">
+        <img src="/static/images/b-bank-2.png" alt="" srcset="" style="max-height: 35rem;min-width: 50rem">
+    </div>
+    <div class="box">
+        <form action = "{{ url_for('signup') }}" method = "POST" class="form">
+            <h2>SignUp</h2>
+            <div class="mssg">{{msg}}</div>
+            <div class="inputBox">
+                <input type="text" required="required" name="name" autocomplete="off">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" required="required" name="email" autocomplete="off">
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="password" autocomplete="off">
+                <span>Set Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="login">Sign In</a>
+            </div>
+            <input type="submit" value="signup">
+        </form>
+    </div>
+</body>
+</html>

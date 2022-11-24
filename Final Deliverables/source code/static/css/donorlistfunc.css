@@ -1,0 +1,38 @@
+.hea{
+text-align:center;
+color:bisque;
+margin-top:1rem;
+}
+.po{
+color:bisque;
+font-weight:bold;
+text-decoration:none;
+margin-top:2rem;
+}
+table, th, td {
+  border: 1px solid bisque;
+  border-collapse: collapse;
+  text-align:left;
+}
+body{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(300deg, gray 20%,#2b073b);
+}
+.center {
+margin-top:1rem;
+  color:blanchedalmond;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn{
+background-color:blanchedalmond;
+}
+.btn:hover{
+background:black;
+color:bisque;
+}
